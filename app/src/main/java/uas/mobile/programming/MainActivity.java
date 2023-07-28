@@ -25,16 +25,16 @@ public class MainActivity extends AppCompatActivity {
         if (mShowCount != null)
             mShowCount.setText(Integer.toString(mCount));
 
-        Toast toast = Toast.makeText(this, "Count", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Count", Toast.LENGTH_SHORT);
         toast.show();
     }
 
     public void toast(View view) {
-        mCount = 0;
+        mCount--;
         if (mShowCount != null)
             mShowCount.setText(Integer.toString(mCount));
 
-        Toast toast = Toast.makeText(this, "Toast", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Toast", Toast.LENGTH_SHORT);
         toast.show();
     }
 }
